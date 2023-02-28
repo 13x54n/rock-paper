@@ -1,0 +1,63 @@
+.app__container {
+  .title {
+    color: #fff;
+    font-size: 3.8em;
+  }
+
+  .game__container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    button {
+      color: #fff;
+      background: transparent;
+      border: 1px solid #fff;
+      padding: 15px;
+      font-size: 22px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        background: #fff;
+        color: #000;
+      }
+    }
+  }
+
+  .home__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 50px 0;
+
+    .bannerImage {
+      width: 50vw;
+      object-fit: contain;
+    }
+  }
+
+  .p2p__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 50px 0;
+
+    .image__container {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      img {
+        width: 25vw;
+        height: 25vw;
+        object-fit: contain;
+      }
+    }
+  }
+}

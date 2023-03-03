@@ -2,12 +2,22 @@
   .title {
     color: #fff;
     font-size: 3.8em;
+
+    @media (max-width: 576px) {
+      font-size: 2em;
+      text-align: center;
+    }
   }
 
   .game__container {
     display: flex;
     align-items: center;
     gap: 40px;
+
+    @media (max-width: 576px) {
+      flex-direction: column;
+      gap: 20px;
+    }
 
     button {
       color: #fff;
@@ -25,6 +35,12 @@
         background: #fff;
         color: #000;
       }
+
+      @media (max-width: 576px) {
+        font-size: 16px;
+        width: 60vw;
+        justify-content: center;
+      }
     }
   }
 
@@ -38,6 +54,10 @@
     .bannerImage {
       width: 50vw;
       object-fit: contain;
+
+      @media (max-width: 576px) {
+        width: 90vw;
+      }
     }
   }
 
@@ -57,6 +77,11 @@
         width: 25vw;
         height: 25vw;
         object-fit: contain;
+
+        @media (max-width: 576px){
+          width: 40vw;
+          height: 40vw;
+        }
       }
     }
   }
